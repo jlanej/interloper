@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+ci_out/
+work/
+# Never any controlled-access data. The only reads in this repository are the public
+# 1000 Genomes litmus sets under tests/data/ (see docs/validation.md); everything else
+# that looks like sequencing data stays out.
+*.cram
+*.crai
+*.bam
+*.bai
+*.vcf
+*.vcf.gz
+*.bcf
+# kraken2 databases and downloaded genomes are fetched, never committed
+*.k2d
+/db/
+/genomes/

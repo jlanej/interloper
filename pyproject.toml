@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interloper"
+version = "0.0.1"
+description = "Positive identification of non-human DNA in human sequencing: screen the reads, name the genome, verify by alignment, and judge each candidate variant by where its own reads come from."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["contamination", "non-human DNA", "kraken2", "buccal", "saliva", "de novo", "structural variants", "trio", "whole-genome sequencing"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Intended Audience :: Science/Research",
+]
+dependencies = []
+
+[project.optional-dependencies]
+# the screening layer interloper builds on (kraken2 runner, non-human partition, allele-based fraction)
+screen = ["nonhuman-screen[bam]>=0.1.8"]
+test = ["pytest>=7"]
+
+[project.scripts]
+interloper = "interloper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
