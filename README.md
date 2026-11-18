@@ -81,6 +81,10 @@ The litmus reads are from the 1000 Genomes Project's high-coverage sequencing (B
 which is public. The genomes are NCBI RefSeq assemblies. No controlled-access data is in this repository, and none
 is used to set any threshold.
 
+**The rule for everyone who contributes:** only publicly available data may appear here, in any form - reads,
+identifiers, positions or summary numbers. It is spelled out in [CONTRIBUTING.md](CONTRIBUTING.md) and checked, as
+far as a machine can, by `tests/test_public_only.py`.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

@@ -17,6 +17,8 @@ work/
 *.vcf
 *.vcf.gz
 *.bcf
+# notes for one machine (paths, private context): never committed
+CLAUDE.local.md
 # kraken2 databases and downloaded genomes are fetched, never committed
 *.k2d
 /db/
