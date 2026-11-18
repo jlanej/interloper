@@ -7,7 +7,7 @@ name = "interloper"
 version = "0.0.1"
 description = "Positive identification of non-human DNA in human sequencing: screen the reads, name the genome, verify by alignment, and judge each candidate variant by where its own reads come from."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 keywords = ["contamination", "non-human DNA", "kraken2", "buccal", "saliva", "de novo", "structural variants", "trio", "whole-genome sequencing"]
 classifiers = [
