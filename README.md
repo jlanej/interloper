@@ -29,7 +29,8 @@ The method is designed and not yet built. What exists today:
 * **A litmus set of real reads** (`tests/data/`): two 1000 Genomes children whose library holds a bacterium, their
   parents, and the bacteria's genomes, cut from public files by a script anyone can run again.
 * **A container** with kraken2, minimap2, samtools and nonhuman-screen, built and published by CI.
-* **The roadmap and the questions open for review**: [docs/roadmap.md](docs/roadmap.md).
+* **The roadmap and the questions open for review**: [docs/roadmap.md](docs/roadmap.md), with the brief given to
+  the reviewer: [docs/review-brief.md](docs/review-brief.md).
 
 ## The litmus set in one paragraph
 
